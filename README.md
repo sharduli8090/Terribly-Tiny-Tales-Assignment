@@ -6,8 +6,7 @@
 ## npm start
 
 ### Or 
-## [Click Here](https://github.com)
-### To View The Deployed Project
+## [Click Here](https://terribly-tiny-tales-assignment-sharduli-pandey.vercel.app/) To View The Deployed Project
 
 ## About the project:
 - **Tailwind CSS** is used here to style the component of the project.

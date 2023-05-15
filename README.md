@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Terribly Tiny Tales
+### A React.js Project created using Tailwind CSS and react charts library deployed over Vercel
+## Created By Sharduli Pandey
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### To Run The Project On Your Local System
+## npm start
 
-## Available Scripts
+### Or 
+## [Click Here](https://github.com)
+### To View The Deployed Project
 
-In the project directory, you can run:
+## About the project:
+1- **Tailwind CSS** is used here to style the component of the project.
+2- **index.css** file contains the tailwind directives.
+3- **index.js** file renders the **App.js** file.
+4- **Submit.js** component is called in *App.js* file.
+5- In *Submit.js* we are fetching the text from the link **"https://www.terriblytinytales.com/test.txt"**. We are then spliting the words of text fetch from the link. We are then traversing through all the words and storing each of them's frequency in an object. We are then sorting the values. Then we are slicing the first 20 frequencies and storing it into another object.
+6- We are then creating **dataNew** and **options** object for plotting our chart using react chart library.
+7- Then we have a **onExporting** function to export the graph data into csv file. Here we are first mapping our object entries into key value pairs and joining them by *\n* and storing into **content**. Then we our creating a **blob** to make our content to text/csv file. Then we are downloading this using **saveAs** from **file-saver** to our system by the specified name.
+8- Then we have our jsx code for all the elements including the tailwind css defined.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About Tailwind CSS
+*Tailwind CSS is a highly customizable utility-first CSS framework. It provides a set of pre-defined utility classes that can be easily applied to HTML elements to style and layout the content. Tailwind CSS focuses on composing designs using small, reusable classes rather than writing custom CSS styles. It offers a comprehensive set of utilities for managing spacing, typography, colors, and more, allowing developers to rapidly build responsive and modern user interfaces.*
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## About react chart library
+*A React chart library is a collection of pre-built components and utilities designed specifically for creating and displaying charts and graphs in React applications. These libraries provide a set of reusable charting components that can be easily integrated into React projects, allowing developers to visualize data in a visually appealing and interactive manner. React chart libraries often offer a wide range of chart types, customization options, and interactivity features, making it easier to create data-driven visualizations without the need for complex coding or extensive knowledge of data visualization techniques.*
